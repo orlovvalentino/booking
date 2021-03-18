@@ -1,32 +1,67 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="app" class="main-content">
+    <form-wizard color="false" @on-change="onChangeTabs" ref="tabsWrapper"
+                 next-button-text=""
+    >
+      <div slot="title" class="car-step">
+        <car-static-description v-if="!activeTab"/>
+      </div>
+      <tab-content title="автомобиль" icon="false" scope="props">
+        <cars-grid  @on-next="$refs.tabsWrapper.nextTab()"/>
+      </tab-content>
+      <tab-content title="дилер" icon="false">
+        My second tab content
+      </tab-content>
+      <tab-content title="ТО И СЕРВИСНЫЕ работы" icon="false">
+        Yuhuuu! This seems pretty damn simple
+      </tab-content>
+      <tab-content title="отправьте заявку" icon="false">
+        cancel
+      </tab-content>
+
+    </form-wizard>
+
   </div>
+
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import CarStaticDescription from "@/components/Steps/Car/CarStaticDescription";
+import CarsGrid from "@/components/Steps/Car/CarsGrid";
 
-#nav {
-  padding: 30px;
-}
+import {FormWizard, TabContent} from 'vue-form-wizard'
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+export default {
+  name: "App",
+  data() {
+    return {
+      activeTab: null
+    }
+  },
+  components: {
+    CarsGrid,
+    CarStaticDescription,
+    FormWizard,
+    TabContent
+  },
+  methods: {
+    onChangeTabs(prevIndex, newIndex) {
+      this.activeTab = newIndex;
+    }
+  },
+  computed:{
+    slotProps () {
+      return {
+        nextTab: this.nextTab
+      }
+    }
+  }
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+</script>
+<style scoped lang="scss">
+.main-content {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 40px 15px;
 }
 </style>

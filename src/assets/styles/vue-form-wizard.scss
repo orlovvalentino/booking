@@ -1,0 +1,282 @@
+.wizard-btn {
+  display: none;
+}
+
+.vue-form-wizard .stepTitle {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.vue-form-wizard * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.vue-form-wizard a {
+  text-decoration: none
+}
+
+.vue-form-wizard .wizard-nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none
+}
+
+.vue-form-wizard .wizard-nav > li {
+  position: relative;
+  display: block
+}
+
+.vue-form-wizard .wizard-nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px
+}
+
+.vue-form-wizard .wizard-nav > li > a:focus, .vue-form-wizard .wizard-nav > li > a:hover {
+  text-decoration: none;
+  background-color: #eee
+}
+
+.vue-form-wizard .wizard-nav > li.disabled > a {
+  color: #777
+}
+
+.vue-form-wizard .wizard-nav > li.disabled > a:focus, .vue-form-wizard .wizard-nav > li.disabled > a:hover {
+  color: #777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed
+}
+
+
+.vue-form-wizard .wizard-nav-pills a, {
+  flex: 1;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1
+}
+
+.vue-form-wizard .wizard-nav-pills li {
+  align-items: flex-start;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    width: calc(25% - 12px);
+  }
+}
+
+.vue-form-wizard .wizard-nav-pills {
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    li {
+      height: 34px;
+      margin-bottom: 15px;
+
+      &.active {
+        display: block;
+      }
+
+      width: 100%;
+      display: none;
+    }
+    &:focus-within{
+      li {
+        display: block;
+      }
+    }
+  }
+}
+
+.vue-form-wizard .wizard-nav-pills > li > a, .vue-form-wizard .wizard-nav-pills a {
+  display: flex
+}
+
+.vue-form-wizard .wizard-nav-pills > li > a {
+  flex-direction: column;
+  padding: 0;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, .2);
+  position: relative;
+  font-weight: 300;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.vue-form-wizard .wizard-nav-pills > li > a:focus, .vue-form-wizard .wizard-nav-pills > li > a:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, .2);
+  outline: 0 !important
+}
+
+.vue-form-wizard .wizard-nav-pills > li > a.disabled {
+  pointer-events: none;
+  cursor: default
+}
+
+.vue-form-wizard .wizard-nav-pills > li.active > a,
+.vue-form-wizard .wizard-nav-pills > li.active > a:focus,
+.vue-form-wizard .wizard-nav-pills > li.active > a:hover {
+  background-color: transparent;
+  transition: font-size .2s linear
+}
+
+.vue-form-wizard .wizard-nav-pills > li.active > a .wizard-icon, .vue-form-wizard .wizard-nav-pills > li.active > a:focus .wizard-icon, .vue-form-wizard .wizard-nav-pills > li.active > a:hover .wizard-icon {
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s linear
+}
+
+.vue-form-wizard .wizard-nav-pills > li{
+  &.active{
+    & ~li a:after{
+      background-color: #EFEFEF;
+    }
+    a{
+      &:after {
+        background-color: #C3002F;
+      }
+    }
+  }
+  a {
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -15px;
+      height: 4px;
+      background-color: #C3002F;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .vue-form-wizard .wizard-nav-pills{
+    margin-bottom: 28px;
+  }
+  .vue-form-wizard .wizard-nav-pills > li a:after{
+    bottom: -13px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .vue-form-wizard .wizard-nav-pills > li {
+
+    a {
+      &:after {
+        background-color: #EFEFEF;
+      }
+    }
+  }
+}
+
+.vue-form-wizard {
+  padding-bottom: 20px
+}
+
+.vue-form-wizard .is_error {
+  border-color: #c84513 !important
+}
+
+.vue-form-wizard .is_error .icon-container {
+  background: #c84513 !important
+}
+
+.vue-form-wizard.xs .wizard-nav-pills > li.active > a .wizard-icon {
+  font-size: 16px
+}
+
+.vue-form-wizard.sm .wizard-nav-pills > li.active > a .wizard-icon {
+  font-size: 20px
+}
+
+.vue-form-wizard.md .wizard-nav-pills > li.active > a .wizard-icon {
+  font-size: 24px
+}
+
+.vue-form-wizard.lg .wizard-nav-pills > li.active > a .wizard-icon {
+  font-size: 28px
+}
+
+.vue-form-wizard .wizard-tab-content {
+  min-height: 100px;
+  padding: 24px 0 10px
+}
+
+
+.vue-form-wizard .wizard-title {
+  color: #252422;
+  font-weight: 300;
+  margin: 0;
+  text-align: center
+}
+
+.vue-form-wizard .category {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9a9a9a;
+  margin-bottom: 0;
+  text-align: center
+}
+
+.vue-form-wizard .clearfix:after {
+  content: "";
+  clear: both;
+  display: table
+}
+
+.vue-form-wizard .wizard-card-footer {
+  padding: 0 20px
+}
+
+.vue-form-wizard .wizard-card-footer .wizard-footer-left {
+  float: left
+}
+
+.vue-form-wizard .wizard-card-footer .wizard-footer-right {
+  float: right
+}
+
+@media screen and (max-width: 350px) {
+  .vue-form-wizard .wizard-card-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+  }
+  .vue-form-wizard .wizard-card-footer .wizard-footer-left, .vue-form-wizard .wizard-card-footer .wizard-footer-right {
+    float: none;
+    flex: 1;
+    display: flex;
+    justify-content: center
+  }
+  .vue-form-wizard .wizard-card-footer .wizard-footer-right button {
+    margin-top: 10px
+  }
+}
+
+.vue-form-wizard.vertical .wizard-card-footer {
+  display: block
+}
+
+.vue-form-wizard.vertical .wizard-nav-pills {
+  flex-direction: column
+}
+
+.vue-form-wizard.vertical .wizard-navigation {
+  display: flex;
+  flex-direction: row
+}
+
+.vue-form-wizard.vertical .wizard-card-footer {
+  padding-top: 30px
+}

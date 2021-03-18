@@ -3,7 +3,7 @@
   "description": "ui for customer360",
   "version": "1.0.0",
   "author": "AWS",
-  "private": true,
+  "prite": true,
   "scripts": {
     "dev-all": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "dev-bodycalc": "cross-env NODE_ENV=development webpack-dev-server --open --hot --config webpack.bodycalc.config.js",
