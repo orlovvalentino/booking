@@ -1,6 +1,16 @@
 @import "vue-form-wizard";
 @import "components/tooltip";
 
+
+@font-face {
+  font-family: "icon-Nissan-Global";
+  src: url("../fonts/Nissan-Global.woff") format("woff"),
+  url("../fonts/Nissan-Global.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Nissan";
   src: url("../fonts/NissanBrand-Regular.woff") format("woff"),

@@ -1,5 +1,19 @@
 import Vue from 'vue'
-import axios from 'axios'
+import axios from 'axios';
+
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
+
+
+window.HELIOS_HF = {
+  pageTitle: 'Nissan',
+  isUserLoggedIn: false,
+  userName: '',
+  avatarUrl: '...',
+  displayLiveChat: true,
+  displayDataTag: true
+};
 
 import { VTooltip } from 'v-tooltip';
 Vue.directive('tooltip', VTooltip);

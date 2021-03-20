@@ -9,7 +9,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "core-js": "^3.6.5",
-    "jquery": "^3.6.0",
+    "jquery": "^2.2.4",
     "v-tooltip": "^2.1.2",
     "vue": "^2.6.11",
     "vue-bootstrap-slider": "^2.1.8",

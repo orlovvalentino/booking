@@ -1,31 +1,36 @@
 <template>
-  <div id="app" class="main-content">
-    <form-wizard color="false" @on-change="onChangeTabs" ref="tabsWrapper"
-                 next-button-text=""
-    >
-      <div slot="title" class="car-step">
-        <car-static-description v-if="!activeTab"/>
-      </div>
-      <tab-content title="автомобиль" icon="false" scope="props">
-        <cars-grid  @on-next="$refs.tabsWrapper.nextTab()"/>
-      </tab-content>
-      <tab-content title="дилер" icon="false">
-        My second tab content
-      </tab-content>
-      <tab-content title="ТО И СЕРВИСНЫЕ работы" icon="false">
-        Yuhuuu! This seems pretty damn simple
-      </tab-content>
-      <tab-content title="отправьте заявку" icon="false">
-        cancel
-      </tab-content>
+  <div id="app" class="main-content-wrapper">
+    <header-nissan></header-nissan>
+    <div class="main-content">
+      <form-wizard color="false" @on-change="onChangeTabs" ref="tabsWrapper"
+                   next-button-text=""
+      >
+        <div slot="title" class="car-step">
+          <car-static-description v-if="!activeTab"/>
+        </div>
+        <tab-content title="автомобиль" icon="false" scope="props">
+          <cars-grid  @on-next="$refs.tabsWrapper.nextTab()"/>
+        </tab-content>
+        <tab-content title="дилер" icon="false">
+          My second tab content
+        </tab-content>
+        <tab-content title="ТО И СЕРВИСНЫЕ работы" icon="false">
+          Yuhuuu! This seems pretty damn simple
+        </tab-content>
+        <tab-content title="отправьте заявку" icon="false">
+          cancel
+        </tab-content>
 
-    </form-wizard>
-
+      </form-wizard>
+    </div>
+    <footer-nissan></footer-nissan>
   </div>
 
 </template>
 
 <script>
+import HeaderNissan from "@/components/Integration/HeaderNissan";
+import FooterNissan from "@/components/Integration/FooterNissan"
 import CarStaticDescription from "@/components/Steps/Car/CarStaticDescription";
 import CarsGrid from "@/components/Steps/Car/CarsGrid";
 
@@ -39,10 +44,12 @@ export default {
     }
   },
   components: {
+    HeaderNissan,
     CarsGrid,
     CarStaticDescription,
     FormWizard,
-    TabContent
+    TabContent,
+    FooterNissan
   },
   methods: {
     onChangeTabs(prevIndex, newIndex) {
