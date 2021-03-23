@@ -11,7 +11,6 @@
 export default {
   name: "HeaderNissan",
   mounted() {
-
     let modernizr = document.createElement('script')
     modernizr.setAttribute('src', '//www-europe.nissan-cdn.net/content/dam/Nissan/header-footer/ru-RU/js/vendor/modernizr.min.js')
     document.head.appendChild(modernizr);
@@ -25,6 +24,5 @@ export default {
 </script>
 
 <style>
-                                                                           /*css/PACE-header-footer.min.css*/
 @import '//www-europe.nissan-cdn.net/content/dam/Nissan/header-footer/ru-RU/css/PACE-header-footer-v3.min.css';
 </style>

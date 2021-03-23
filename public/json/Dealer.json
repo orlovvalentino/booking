@@ -1,0 +1,104 @@
+{
+  "country": "ru",
+  "servicesStructure": [
+    {
+      "_id": "ru_nissan_SC",
+      "serviceId": "Обслуживание и сервис",
+      "icon": "icon-car",
+      "openingHoursLocalized": {
+        "hasAfternoonHours": false
+      }
+    },
+    {
+      "_id": "ru_nissan_TD",
+      "serviceId": "Тест-драйв",
+      "icon": "icon-car",
+      "openingHoursLocalized": {
+        "hasAfternoonHours": false
+      }
+    },
+    {
+      "_id": "ru_nissan_PV",
+      "serviceId": "Пассажирские автомобили",
+      "icon": "icon-car",
+      "openingHoursLocalized": {
+        "hasAfternoonHours": false
+      }
+    },
+    {
+      "_id": "ru_nissan_OD",
+      "serviceId": "Официальные Дилеры.",
+      "icon": "icon-car",
+      "openingHoursLocalized": {
+        "hasAfternoonHours": false
+      }
+    }
+  ],
+  "address": {
+    "addressLine1": "пр-т Алексея Угарова, д. 18Е",
+    "city": "Старый Оскол",
+    "postalCode": "309516"
+  },
+  "contact": {
+    "phone": "+7(4725) 46-27-27",
+    "email": "",
+    "website": "http://nissan-ringauto.ru/?utm_source\u003dnissan_website\u0026utm_medium\u003dnw\u0026utm_campaign\u003dnw"
+  },
+  "openingHours": {
+    "openingHoursText": "Понедельник - пятница, воскресенье  с 08:00 до 20:00, суббота -  выходной",
+    "hasAfternoonHours": false
+  },
+  "dealerServices": [
+    {
+      "iconId": "icon-car",
+      "name": "Официальные Дилеры",
+      "openingHoursText": "",
+      "rank": "1"
+    },
+    {
+      "iconId": "icon-configure",
+      "name": "Обслуживание и сервис",
+      "openingHoursText": "",
+      "rank": "1"
+    },
+    {
+      "iconId": "icon-car",
+      "name": "Пассажирские автомобили",
+      "openingHoursText": "",
+      "rank": "1"
+    },
+    {
+      "iconId": "icon-car",
+      "name": "Тест-драйв",
+      "openingHoursText": "",
+      "rank": "1"
+    }
+  ],
+  "actions": {
+    "BOOK_A_TEST_DRIVE": true
+  },
+  "averageStarRating": {
+    "afterSales": {
+      "displayScore": "4.9",
+      "numberOfReviews": "39",
+      "title": "Сервис"
+    },
+    "sales": {
+      "displayScore": "4.9",
+      "numberOfReviews": "16",
+      "title": "Продажи"
+    }
+  },
+  "openNow": false,
+  "hasDealerWebsite": true,
+  "urlId": "130",
+  "id": "ru_nissan_2111211",
+  "dealerId": "2111211",
+  "tradingName": "Ринг Авто Оскол",
+  "geolocation": {
+    "latitude": 51.20313,
+    "longitude": 37.51969
+  },
+  "suggestedName": "Ринг Авто Оскол - Старый Оскол",
+  "markerStyle": ""
+}

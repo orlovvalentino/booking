@@ -22,7 +22,6 @@
 </template>
 
 <script>
-
 export default {
   name: "CarsGrid",
   components:{
@@ -52,6 +51,20 @@ export default {
         el.classList.remove('active')
       });
       event.target.closest('.car').classList.add('active');
+      this.$emit('on-modification', this.getModelData(id));
+    },
+    getModelData(id){
+      let model;
+      this.cars.forEach((item)=>{
+        let i = item.models.filter((i)=>{
+          return i.id == id;
+        })
+        if(i.length) {
+          model = i[0];
+          model.model_name = item.model_name;
+        };
+      })
+      return model;
     }
   }
 }

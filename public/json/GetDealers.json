@@ -1,0 +1,1369 @@
+{
+  "totalResults": 124,
+  "dealers": [
+    {
+      "id": "ru_nissan_2110101",
+      "dealerId": "2110101",
+      "tradingName": "AA Major Auto",
+      "geolocation": {
+        "lat": 55.8286148,
+        "lng": 37.4048445
+      },
+      "suggestedName": "AA Major Auto - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110102",
+      "dealerId": "2110102",
+      "tradingName": "AA Major Auto",
+      "geolocation": {
+        "lat": 55.7906945,
+        "lng": 37.2554613
+      },
+      "suggestedName": "AA Major Auto - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110103",
+      "dealerId": "2110103",
+      "tradingName": "AA Major Auto",
+      "geolocation": {
+        "lat": 55.65295,
+        "lng": 37.439783
+      },
+      "suggestedName": "AA Major Auto - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110104",
+      "dealerId": "2110104",
+      "tradingName": "AA Major Auto",
+      "geolocation": {
+        "lat": 55.8349642,
+        "lng": 37.4133795
+      },
+      "suggestedName": "AA Major Auto - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110105",
+      "dealerId": "2110105",
+      "tradingName": "AA Major Auto",
+      "geolocation": {
+        "lat": 55.62508,
+        "lng": 37.79886
+      },
+      "suggestedName": "AA Major Auto - Дзержинский",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2130221",
+      "dealerId": "2130221",
+      "tradingName": "Aurore Auto",
+      "geolocation": {
+        "lat": 59.9294699,
+        "lng": 30.3816639
+      },
+      "suggestedName": "Aurore Auto - Санкт-Петербург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112181",
+      "dealerId": "2112181",
+      "tradingName": "GN Service",
+      "geolocation": {
+        "lat": 55.613076,
+        "lng": 37.5101335
+      },
+      "suggestedName": "GN Service - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111911",
+      "dealerId": "2111911",
+      "tradingName": "MGM Motors",
+      "geolocation": {
+        "lat": 60.7022976,
+        "lng": 28.7797481
+      },
+      "suggestedName": "MGM Motors - Выборг",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111471",
+      "dealerId": "2111471",
+      "tradingName": "NATC Group",
+      "geolocation": {
+        "lat": 55.8542182,
+        "lng": 38.5110375
+      },
+      "suggestedName": "NATC Group - Ногинск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112151",
+      "dealerId": "2112151",
+      "tradingName": "АВТОГРАД",
+      "geolocation": {
+        "lat": 54.475454,
+        "lng": 36.232704
+      },
+      "suggestedName": "АВТОГРАД - Калуга",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111921",
+      "dealerId": "2111921",
+      "tradingName": "АКОС-Челны",
+      "geolocation": {
+        "lat": 55.695654,
+        "lng": 52.366204
+      },
+      "suggestedName": "АКОС-Челны - Набережные Челны",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120721",
+      "dealerId": "2120721",
+      "tradingName": "АСКАР-АВТО",
+      "geolocation": {
+        "lat": 54.706676,
+        "lng": 20.581672
+      },
+      "suggestedName": "АСКАР-АВТО - Калининград",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110441",
+      "dealerId": "2110441",
+      "tradingName": "АСПЭК Авто",
+      "geolocation": {
+        "lat": 56.84125,
+        "lng": 53.310428
+      },
+      "suggestedName": "АСПЭК Авто - Ижевск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110461",
+      "dealerId": "2110461",
+      "tradingName": "АСТ Моторс",
+      "geolocation": {
+        "lat": 51.777205,
+        "lng": 55.14241
+      },
+      "suggestedName": "АСТ Моторс - Оренбург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111111",
+      "dealerId": "2111111",
+      "tradingName": "АТИК-МОТОРС",
+      "geolocation": {
+        "lat": 50.305229,
+        "lng": 127.531495
+      },
+      "suggestedName": "АТИК-МОТОРС - Благовещенск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111721",
+      "dealerId": "2111721",
+      "tradingName": "Авангард Моторс",
+      "geolocation": {
+        "lat": 55.613852,
+        "lng": 38.061086
+      },
+      "suggestedName": "Авангард Моторс - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110401",
+      "dealerId": "2110401",
+      "tradingName": "Аврора Авто",
+      "geolocation": {
+        "lat": 51.664291,
+        "lng": 39.152995
+      },
+      "suggestedName": "Аврора Авто - Воронеж",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110681",
+      "dealerId": "2110681",
+      "tradingName": "Авто Премиум ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 56.790245,
+        "lng": 35.911483
+      },
+      "suggestedName": "Авто Премиум ДОСТУПНА ОНЛАЙН ПОКУПКА - Тверь",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2170021",
+      "dealerId": "2170021",
+      "tradingName": "Авто-Люкс",
+      "geolocation": {
+        "lat": 44.584444,
+        "lng": 33.477767
+      },
+      "suggestedName": "Авто-Люкс - Севастополь",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111371",
+      "dealerId": "2111371",
+      "tradingName": "Авто-Партнер",
+      "geolocation": {
+        "lat": 56.100535,
+        "lng": 54.295743
+      },
+      "suggestedName": "Авто-Партнер - Нефтекамск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111051",
+      "dealerId": "2111051",
+      "tradingName": "АвтоПремьер М",
+      "geolocation": {
+        "lat": 54.797753,
+        "lng": 56.055247
+      },
+      "suggestedName": "АвтоПремьер М - Уфа",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120051",
+      "dealerId": "2120051",
+      "tradingName": "АвтоСпецЦентр",
+      "geolocation": {
+        "lat": 55.898984,
+        "lng": 37.421559
+      },
+      "suggestedName": "АвтоСпецЦентр - Химки",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120052",
+      "dealerId": "2120052",
+      "tradingName": "АвтоСпецЦентр Nissan Внуково",
+      "geolocation": {
+        "lat": 55.617875,
+        "lng": 37.392381
+      },
+      "suggestedName": "АвтоСпецЦентр Nissan Внуково - Картмазово",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110511",
+      "dealerId": "2110511",
+      "tradingName": "АвтоТракт",
+      "geolocation": {
+        "lat": 56.169333,
+        "lng": 40.405126
+      },
+      "suggestedName": "АвтоТракт - Владимир",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111781",
+      "dealerId": "2111781",
+      "tradingName": "АвтоФорум Центр ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 51.566273,
+        "lng": 46.001001
+      },
+      "suggestedName": "АвтоФорум Центр ДОСТУПНА ОНЛАЙН ПОКУПКА - Саратов",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110931",
+      "dealerId": "2110931",
+      "tradingName": "Автомир ДВ",
+      "geolocation": {
+        "lat": 48.51961,
+        "lng": 135.071207
+      },
+      "suggestedName": "Автомир ДВ - Хабаровск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120941",
+      "dealerId": "2120941",
+      "tradingName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА",
+      "geolocation": {
+        "lat": 51.573463,
+        "lng": 46.077207
+      },
+      "suggestedName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА - Саратов",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2130023",
+      "dealerId": "2130023",
+      "tradingName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА",
+      "geolocation": {
+        "lat": 55.77076776,
+        "lng": 37.40432739
+      },
+      "suggestedName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120671",
+      "dealerId": "2120671",
+      "tradingName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА",
+      "geolocation": {
+        "lat": 64.53355,
+        "lng": 40.60113
+      },
+      "suggestedName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА - Архангельск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120561",
+      "dealerId": "2120561",
+      "tradingName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА",
+      "geolocation": {
+        "lat": 53.220506,
+        "lng": 34.318042
+      },
+      "suggestedName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА - Брянск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2130021",
+      "dealerId": "2130021",
+      "tradingName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА",
+      "geolocation": {
+        "lat": 55.853573,
+        "lng": 37.679209
+      },
+      "suggestedName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2130022",
+      "dealerId": "2130022",
+      "tradingName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА",
+      "geolocation": {
+        "lat": 55.811502,
+        "lng": 37.842334
+      },
+      "suggestedName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2130024",
+      "dealerId": "2130024",
+      "tradingName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА",
+      "geolocation": {
+        "lat": 55.682162,
+        "lng": 37.7771882
+      },
+      "suggestedName": "Автомир ДОСТУПНА ОНЛАЙН-ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110881",
+      "dealerId": "2110881",
+      "tradingName": "Автон",
+      "geolocation": {
+        "lat": 56.125474,
+        "lng": 47.364226
+      },
+      "suggestedName": "Автон - Чебоксары",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111771",
+      "dealerId": "2111771",
+      "tradingName": "Автопродикс ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 60.024528,
+        "lng": 30.433202
+      },
+      "suggestedName": "Автопродикс ДОСТУПНА ОНЛАЙН ПОКУПКА - Санкт-Петербург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111541",
+      "dealerId": "2111541",
+      "tradingName": "Автопродикс Московский ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 59.830012,
+        "lng": 30.344687
+      },
+      "suggestedName": "Автопродикс Московский ДОСТУПНА ОНЛАЙН ПОКУПКА - Санкт-Петербург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112131",
+      "dealerId": "2112131",
+      "tradingName": "Автопродикс Нижний Тагил",
+      "geolocation": {
+        "lat": 57.8685665,
+        "lng": 59.9391074
+      },
+      "suggestedName": "Автопродикс Нижний Тагил - Нижний Тагил",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111531",
+      "dealerId": "2111531",
+      "tradingName": "Автопродикс Приморский ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 59.992492,
+        "lng": 30.213146
+      },
+      "suggestedName": "Автопродикс Приморский ДОСТУПНА ОНЛАЙН ПОКУПКА - Санкт-Петербург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111151",
+      "dealerId": "2111151",
+      "tradingName": "Авторай Центр",
+      "geolocation": {
+        "lat": 54.294088,
+        "lng": 48.258621
+      },
+      "suggestedName": "Авторай Центр - Ульяновск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120771",
+      "dealerId": "2120771",
+      "tradingName": "Авторитет Авто +",
+      "geolocation": {
+        "lat": 43.31336,
+        "lng": 132.090316
+      },
+      "suggestedName": "Авторитет Авто + - Артем",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2170011",
+      "dealerId": "2170011",
+      "tradingName": "Авторитет-М",
+      "geolocation": {
+        "lat": 44.9879295,
+        "lng": 34.0890089
+      },
+      "suggestedName": "Авторитет-М - Симферополь",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111981",
+      "dealerId": "2111981",
+      "tradingName": "Автоцентр «РРТ-ОЗЕРКИ» ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 60.049653,
+        "lng": 30.313227
+      },
+      "suggestedName": "Автоцентр «РРТ-ОЗЕРКИ» ДОСТУПНА ОНЛАЙН ПОКУПКА - Санкт-Петербург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110601",
+      "dealerId": "2110601",
+      "tradingName": "Автоцентр АНТ",
+      "geolocation": {
+        "lat": 53.342055,
+        "lng": 83.68845
+      },
+      "suggestedName": "Автоцентр АНТ - Барнаул",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120121",
+      "dealerId": "2120121",
+      "tradingName": "Автоцентр ОВОД ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 55.581471,
+        "lng": 37.705388
+      },
+      "suggestedName": "Автоцентр ОВОД ДОСТУПНА ОНЛАЙН ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120391",
+      "dealerId": "2120391",
+      "tradingName": "Автоцентр Южный",
+      "geolocation": {
+        "lat": 51.689485,
+        "lng": 36.152809
+      },
+      "suggestedName": "Автоцентр Южный - Курск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120041",
+      "dealerId": "2120041",
+      "tradingName": "Автоцентр на Таганке",
+      "geolocation": {
+        "lat": 55.735616,
+        "lng": 37.664399
+      },
+      "suggestedName": "Автоцентр на Таганке - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111291",
+      "dealerId": "2111291",
+      "tradingName": "Агат Авто Братск",
+      "geolocation": {
+        "lat": 56.142394,
+        "lng": 101.597697
+      },
+      "suggestedName": "Агат Авто Братск - Братск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110581",
+      "dealerId": "2110581",
+      "tradingName": "Агат Авто Иркутск",
+      "geolocation": {
+        "lat": 52.344343,
+        "lng": 104.269351
+      },
+      "suggestedName": "Агат Авто Иркутск - Иркутск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110751",
+      "dealerId": "2110751",
+      "tradingName": "Арбеково-Мотор",
+      "geolocation": {
+        "lat": 53.233581,
+        "lng": 44.903317
+      },
+      "suggestedName": "Арбеково-Мотор - Пенза",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111251",
+      "dealerId": "2111251",
+      "tradingName": "Арконт ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 48.756804,
+        "lng": 44.790418
+      },
+      "suggestedName": "Арконт ДОСТУПНА ОНЛАЙН ПОКУПКА - Волжский",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111751",
+      "dealerId": "2111751",
+      "tradingName": "Арконт ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 48.705212,
+        "lng": 44.438242
+      },
+      "suggestedName": "Арконт ДОСТУПНА ОНЛАЙН ПОКУПКА - Волгоград",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110491",
+      "dealerId": "2110491",
+      "tradingName": "Арконт ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 48.769343,
+        "lng": 44.5422
+      },
+      "suggestedName": "Арконт ДОСТУПНА ОНЛАЙН ПОКУПКА - Волгоград",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112161",
+      "dealerId": "2112161",
+      "tradingName": "Астра Моторз Томск",
+      "geolocation": {
+        "lat": 56.538743,
+        "lng": 84.959216
+      },
+      "suggestedName": "Астра Моторз Томск - Томск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112081",
+      "dealerId": "2112081",
+      "tradingName": "БОРАВТО Тамбов",
+      "geolocation": {
+        "lat": 52.758314,
+        "lng": 41.466717
+      },
+      "suggestedName": "БОРАВТО Тамбов - Тамбов",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110851",
+      "dealerId": "2110851",
+      "tradingName": "Байкал Моторс ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 51.840836,
+        "lng": 107.608092
+      },
+      "suggestedName": "Байкал Моторс ДОСТУПНА ОНЛАЙН ПОКУПКА - Улан Удэ",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111341",
+      "dealerId": "2111341",
+      "tradingName": "Башавтоком ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 53.682715,
+        "lng": 55.947867
+      },
+      "suggestedName": "Башавтоком ДОСТУПНА ОНЛАЙН ПОКУПКА - Стерлитамак",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110341",
+      "dealerId": "2110341",
+      "tradingName": "Башавтоком ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 54.750136,
+        "lng": 56.01466
+      },
+      "suggestedName": "Башавтоком ДОСТУПНА ОНЛАЙН ПОКУПКА - Уфа",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111521",
+      "dealerId": "2111521",
+      "tradingName": "Башавтоком Октябрьский ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 54.492229,
+        "lng": 53.472736
+      },
+      "suggestedName": "Башавтоком Октябрьский ДОСТУПНА ОНЛАЙН ПОКУПКА - Октябрьский",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110591",
+      "dealerId": "2110591",
+      "tradingName": "Блок Роско",
+      "geolocation": {
+        "lat": 56.947745,
+        "lng": 40.968739
+      },
+      "suggestedName": "Блок Роско - Иваново",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111361",
+      "dealerId": "2111361",
+      "tradingName": "Борисоглебск-АВТО",
+      "geolocation": {
+        "lat": 51.377781,
+        "lng": 42.095561
+      },
+      "suggestedName": "Борисоглебск-АВТО - Борисоглебск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110501",
+      "dealerId": "2110501",
+      "tradingName": "Викинги",
+      "geolocation": {
+        "lat": 53.547868,
+        "lng": 49.267211
+      },
+      "suggestedName": "Викинги - Тольятти",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111651",
+      "dealerId": "2111651",
+      "tradingName": "Возрождение",
+      "geolocation": {
+        "lat": 53.000408,
+        "lng": 36.087753
+      },
+      "suggestedName": "Возрождение - Орел",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2130382",
+      "dealerId": "2130382",
+      "tradingName": "Гранд Моторс",
+      "geolocation": {
+        "lat": 57.10124,
+        "lng": 65.574495
+      },
+      "suggestedName": "Гранд Моторс - Тюмень",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111441",
+      "dealerId": "2111441",
+      "tradingName": "Динамика",
+      "geolocation": {
+        "lat": 61.656439,
+        "lng": 50.821084
+      },
+      "suggestedName": "Динамика - Сыктывкар",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111161",
+      "dealerId": "2111161",
+      "tradingName": "Евразия Моторс",
+      "geolocation": {
+        "lat": 59.124345,
+        "lng": 37.958125
+      },
+      "suggestedName": "Евразия Моторс - Череповец",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120411",
+      "dealerId": "2120411",
+      "tradingName": "Евразия центр ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 54.988597,
+        "lng": 73.234474
+      },
+      "suggestedName": "Евразия центр ДОСТУПНА ОНЛАЙН ПОКУПКА - Омск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112121",
+      "dealerId": "2112121",
+      "tradingName": "К-Моторс",
+      "geolocation": {
+        "lat": 61.78718,
+        "lng": 34.2981323
+      },
+      "suggestedName": "К-Моторс - Петрозаводск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111741",
+      "dealerId": "2111741",
+      "tradingName": "КЛЮЧАВТО",
+      "geolocation": {
+        "lat": 45.0207,
+        "lng": 38.9408
+      },
+      "suggestedName": "КЛЮЧАВТО - Новая Адыгея",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112031",
+      "dealerId": "2112031",
+      "tradingName": "КЛЮЧАВТО",
+      "geolocation": {
+        "lat": 45.027088,
+        "lng": 39.130811
+      },
+      "suggestedName": "КЛЮЧАВТО - Краснодар",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112051",
+      "dealerId": "2112051",
+      "tradingName": "КЛЮЧАВТО",
+      "geolocation": {
+        "lat": 44.767893,
+        "lng": 37.709137
+      },
+      "suggestedName": "КЛЮЧАВТО - Новороссийск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112041",
+      "dealerId": "2112041",
+      "tradingName": "КЛЮЧАВТО",
+      "geolocation": {
+        "lat": 47.269878,
+        "lng": 39.683796
+      },
+      "suggestedName": "КЛЮЧАВТО - Ростов-на-Дону",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112111",
+      "dealerId": "2112111",
+      "tradingName": "КЛЮЧАВТО",
+      "geolocation": {
+        "lat": 55.675653,
+        "lng": 37.858925
+      },
+      "suggestedName": "КЛЮЧАВТО - Люберцы",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112061",
+      "dealerId": "2112061",
+      "tradingName": "КЛЮЧАВТО",
+      "geolocation": {
+        "lat": 45.057147,
+        "lng": 41.917532
+      },
+      "suggestedName": "КЛЮЧАВТО - Ставрополь",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112071",
+      "dealerId": "2112071",
+      "tradingName": "КЛЮЧАВТО",
+      "geolocation": {
+        "lat": 44.206372,
+        "lng": 43.09691
+      },
+      "suggestedName": "КЛЮЧАВТО - Минеральные Воды",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112042",
+      "dealerId": "2112042",
+      "tradingName": "КЛЮЧАВТО",
+      "geolocation": {
+        "lat": 47.279813,
+        "lng": 39.7657338
+      },
+      "suggestedName": "КЛЮЧАВТО - Ростов-на-Дону",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111731",
+      "dealerId": "2111731",
+      "tradingName": "КОРС ГРУПП",
+      "geolocation": {
+        "lat": 54.017972,
+        "lng": 38.266731
+      },
+      "suggestedName": "КОРС ГРУПП - Новомосковск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110531",
+      "dealerId": "2110531",
+      "tradingName": "КОРС ГРУПП",
+      "geolocation": {
+        "lat": 54.246234,
+        "lng": 37.613629
+      },
+      "suggestedName": "КОРС ГРУПП - Тула",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110611",
+      "dealerId": "2110611",
+      "tradingName": "Картель Авто",
+      "geolocation": {
+        "lat": 55.308165,
+        "lng": 86.169705
+      },
+      "suggestedName": "Картель Авто - Кемерово",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112101",
+      "dealerId": "2112101",
+      "tradingName": "КорсГрупп",
+      "geolocation": {
+        "lat": 55.159907,
+        "lng": 38.684699
+      },
+      "suggestedName": "КорсГрупп - Коломна",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111791",
+      "dealerId": "2111791",
+      "tradingName": "Лаки Моторс",
+      "geolocation": {
+        "lat": 58.034739,
+        "lng": 56.20129
+      },
+      "suggestedName": "Лаки Моторс - Пермь",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110361",
+      "dealerId": "2110361",
+      "tradingName": "Лаки Моторс",
+      "geolocation": {
+        "lat": 56.765428129859,
+        "lng": 60.589863281611
+      },
+      "suggestedName": "Лаки Моторс - Екатеринбург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110921",
+      "dealerId": "2110921",
+      "tradingName": "Лидер Авто",
+      "geolocation": {
+        "lat": 68.900317,
+        "lng": 33.066466
+      },
+      "suggestedName": "Лидер Авто - Мурманск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111991",
+      "dealerId": "2111991",
+      "tradingName": "МАРКА ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 59.215891,
+        "lng": 39.806264
+      },
+      "suggestedName": "МАРКА ДОСТУПНА ОНЛАЙН ПОКУПКА - Вологда",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112001",
+      "dealerId": "2112001",
+      "tradingName": "МАРКА ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 55.835542,
+        "lng": 49.143389
+      },
+      "suggestedName": "МАРКА ДОСТУПНА ОНЛАЙН ПОКУПКА - Казань",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111891",
+      "dealerId": "2111891",
+      "tradingName": "МОТОР ЛЕНД",
+      "geolocation": {
+        "lat": 51.661989,
+        "lng": 39.300249
+      },
+      "suggestedName": "МОТОР ЛЕНД - Воронеж",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110481",
+      "dealerId": "2110481",
+      "tradingName": "МегаАльянс",
+      "geolocation": {
+        "lat": 54.648127,
+        "lng": 39.652595
+      },
+      "suggestedName": "МегаАльянс - Рязань",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111501",
+      "dealerId": "2111501",
+      "tradingName": "НЦ Лидер",
+      "geolocation": {
+        "lat": 56.04172,
+        "lng": 92.929224
+      },
+      "suggestedName": "НЦ Лидер - Красноярск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111972",
+      "dealerId": "2111972",
+      "tradingName": "Нижегородец",
+      "geolocation": {
+        "lat": 56.303392,
+        "lng": 44.046813
+      },
+      "suggestedName": "Нижегородец - Нижний Новгород",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111971",
+      "dealerId": "2111971",
+      "tradingName": "Нижегородец",
+      "geolocation": {
+        "lat": 56.309489,
+        "lng": 43.899472
+      },
+      "suggestedName": "Нижегородец - Нижний Новгород",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111241",
+      "dealerId": "2111241",
+      "tradingName": "Олимп Моторс",
+      "geolocation": {
+        "lat": 47.70098215,
+        "lng": 40.11743546
+      },
+      "suggestedName": "Олимп Моторс - Шахты",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111071",
+      "dealerId": "2111071",
+      "tradingName": "Премио",
+      "geolocation": {
+        "lat": 56.256161,
+        "lng": 43.467871
+      },
+      "suggestedName": "Премио - Дзержинск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111841",
+      "dealerId": "2111841",
+      "tradingName": "Премьер Авто",
+      "geolocation": {
+        "lat": 54.82306095,
+        "lng": 32.0526143
+      },
+      "suggestedName": "Премьер Авто - Смоленск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110951",
+      "dealerId": "2110951",
+      "tradingName": "Престиж авто",
+      "geolocation": {
+        "lat": 58.637292,
+        "lng": 49.593094
+      },
+      "suggestedName": "Престиж авто - Киров",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110332",
+      "dealerId": "2110332",
+      "tradingName": "Регинас",
+      "geolocation": {
+        "lat": 55.210712,
+        "lng": 61.38349
+      },
+      "suggestedName": "Регинас - Челябинск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110331",
+      "dealerId": "2110331",
+      "tradingName": "Регинас",
+      "geolocation": {
+        "lat": 55.170265,
+        "lng": 61.301351
+      },
+      "suggestedName": "Регинас - Челябинск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110471",
+      "dealerId": "2110471",
+      "tradingName": "Регинас",
+      "geolocation": {
+        "lat": 53.352375,
+        "lng": 58.962002
+      },
+      "suggestedName": "Регинас - Магнитогорск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112091",
+      "dealerId": "2112091",
+      "tradingName": "Регинас-Урал",
+      "geolocation": {
+        "lat": 56.824827,
+        "lng": 60.559366
+      },
+      "suggestedName": "Регинас-Урал - Екатеринбург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112092",
+      "dealerId": "2112092",
+      "tradingName": "Регинас-Урал",
+      "geolocation": {
+        "lat": 56.842776,
+        "lng": 60.672855
+      },
+      "suggestedName": "Регинас-Урал - Екатеринбург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112171",
+      "dealerId": "2112171",
+      "tradingName": "Регион-Авто",
+      "geolocation": {
+        "lat": 52.601435,
+        "lng": 39.560333
+      },
+      "suggestedName": "Регион-Авто - Липецк",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111211",
+      "dealerId": "2111211",
+      "tradingName": "Ринг Авто Оскол",
+      "geolocation": {
+        "lat": 51.20313,
+        "lng": 37.51969
+      },
+      "suggestedName": "Ринг Авто Оскол - Старый Оскол",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110372",
+      "dealerId": "2110372",
+      "tradingName": "Рольф ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 55.911239,
+        "lng": 37.591562
+      },
+      "suggestedName": "Рольф ДОСТУПНА ОНЛАЙН ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110371",
+      "dealerId": "2110371",
+      "tradingName": "Рольф ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 55.878176,
+        "lng": 37.54275
+      },
+      "suggestedName": "Рольф ДОСТУПНА ОНЛАЙН ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110431",
+      "dealerId": "2110431",
+      "tradingName": "СК-Моторс",
+      "geolocation": {
+        "lat": 61.271466,
+        "lng": 73.373767
+      },
+      "suggestedName": "СК-Моторс - Сургут",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111451",
+      "dealerId": "2111451",
+      "tradingName": "СК-Моторс",
+      "geolocation": {
+        "lat": 62.137305,
+        "lng": 65.407071
+      },
+      "suggestedName": "СК-Моторс - Нягань",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110821",
+      "dealerId": "2110821",
+      "tradingName": "СК-Моторс",
+      "geolocation": {
+        "lat": 63.175689,
+        "lng": 75.413733
+      },
+      "suggestedName": "СК-Моторс - Ноябрьск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111811",
+      "dealerId": "2111811",
+      "tradingName": "СТК Центр",
+      "geolocation": {
+        "lat": 59.939022,
+        "lng": 30.450423
+      },
+      "suggestedName": "СТК Центр - Санкт-Петербург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112011",
+      "dealerId": "2112011",
+      "tradingName": "Самарские Автомобили",
+      "geolocation": {
+        "lat": 53.13769,
+        "lng": 50.1781
+      },
+      "suggestedName": "Самарские Автомобили - Самара",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111851",
+      "dealerId": "2111851",
+      "tradingName": "Сатурн-К",
+      "geolocation": {
+        "lat": 55.415881,
+        "lng": 65.240727
+      },
+      "suggestedName": "Сатурн-К - Курган",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111901",
+      "dealerId": "2111901",
+      "tradingName": "Сатурн-Р ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 57.944756,
+        "lng": 56.072722
+      },
+      "suggestedName": "Сатурн-Р ДОСТУПНА ОНЛАЙН ПОКУПКА - Пермь",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112191",
+      "dealerId": "2112191",
+      "tradingName": "Сибирские моторы",
+      "geolocation": {
+        "lat": 54.9954,
+        "lng": 82.805454
+      },
+      "suggestedName": "Сибирские моторы - Новосибирск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111571",
+      "dealerId": "2111571",
+      "tradingName": "Сокол Моторс",
+      "geolocation": {
+        "lat": 47.529278,
+        "lng": 42.200985
+      },
+      "suggestedName": "Сокол Моторс - Волгодонск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111861",
+      "dealerId": "2111861",
+      "tradingName": "Спектр-Авто-Н",
+      "geolocation": {
+        "lat": 57.591556,
+        "lng": 39.900361
+      },
+      "suggestedName": "Спектр-Авто-Н - Ярославль",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2120111",
+      "dealerId": "2120111",
+      "tradingName": "ТЦ Кунцево",
+      "geolocation": {
+        "lat": 55.725929,
+        "lng": 37.374102
+      },
+      "suggestedName": "ТЦ Кунцево - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2112141",
+      "dealerId": "2112141",
+      "tradingName": "Тринити Моторс",
+      "geolocation": {
+        "lat": 50.64923,
+        "lng": 36.56832
+      },
+      "suggestedName": "Тринити Моторс - Белгород",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110871",
+      "dealerId": "2110871",
+      "tradingName": "У Сервис+ ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 55.491699,
+        "lng": 37.60973
+      },
+      "suggestedName": "У Сервис+ ДОСТУПНА ОНЛАЙН ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110161",
+      "dealerId": "2110161",
+      "tradingName": "У Сервис+ ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 55.793875,
+        "lng": 37.57738
+      },
+      "suggestedName": "У Сервис+ ДОСТУПНА ОНЛАЙН ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110162",
+      "dealerId": "2110162",
+      "tradingName": "У Сервис+ ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 55.678395,
+        "lng": 37.692865
+      },
+      "suggestedName": "У Сервис+ ДОСТУПНА ОНЛАЙН ПОКУПКА - Москва",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110891",
+      "dealerId": "2110891",
+      "tradingName": "Флай Моторс",
+      "geolocation": {
+        "lat": 53.73998,
+        "lng": 87.101326
+      },
+      "suggestedName": "Флай Моторс - Новокузнецк",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111141",
+      "dealerId": "2111141",
+      "tradingName": "Чита Моторс ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 52.0773234,
+        "lng": 113.4722243
+      },
+      "suggestedName": "Чита Моторс ДОСТУПНА ОНЛАЙН ПОКУПКА - Чита",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111881",
+      "dealerId": "2111881",
+      "tradingName": "ЭКСПЕРТ САМАРА",
+      "geolocation": {
+        "lat": 53.1841392,
+        "lng": 50.149903
+      },
+      "suggestedName": "ЭКСПЕРТ САМАРА - Самара",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111691",
+      "dealerId": "2111691",
+      "tradingName": "Эксперт НСК ДОСТУПНА ОНЛАЙН ПОКУПКА",
+      "geolocation": {
+        "lat": 54.9829637,
+        "lng": 82.998607
+      },
+      "suggestedName": "Эксперт НСК ДОСТУПНА ОНЛАЙН ПОКУПКА - Новосибирск",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111551",
+      "dealerId": "2111551",
+      "tradingName": "Эксперт СВ",
+      "geolocation": {
+        "lat": 53.2081326,
+        "lng": 48.4823141
+      },
+      "suggestedName": "Эксперт СВ - Новая Крымза",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2111701",
+      "dealerId": "2111701",
+      "tradingName": "Эксперт СВ Оренбург",
+      "geolocation": {
+        "lat": 51.7185363,
+        "lng": 55.1410295
+      },
+      "suggestedName": "Эксперт СВ Оренбург - Оренбург",
+      "markerStyle": ""
+    },
+    {
+      "id": "ru_nissan_2110801",
+      "dealerId": "2110801",
+      "tradingName": "Экспром Сервис",
+      "geolocation": {
+        "lat": 60.9631221,
+        "lng": 76.5477403
+      },
+      "suggestedName": "Экспром Сервис - Нижневартовск",
+      "markerStyle": ""
+    }
+  ]
+}

@@ -5,7 +5,6 @@ global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;
 
-
 window.HELIOS_HF = {
   pageTitle: 'Nissan',
   isUserLoggedIn: false,
