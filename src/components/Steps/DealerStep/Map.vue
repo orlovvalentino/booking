@@ -24,7 +24,7 @@
         </gmap-cluster>
       </gmap-map>
     </div>
-    <current-dealer v-if="currentDealer" @on-next="$emit('on-next')" :current-dealer="currentDealer"/>
+    <current-dealer v-if="currentDealer" @on-next="$emit('on-next', currentDealer)" :current-dealer="currentDealer"/>
   </div>
 </template>
 
@@ -32,33 +32,15 @@
 import Vue from 'vue';
 import * as GmapVue from 'gmap-vue';
 import GmapCluster from 'gmap-vue/dist/components/cluster';
-// import GmapVue from 'gmap-vue'
-// import {GmapMarker} from 'gmap-vue/src/components/marker'
-
 
 Vue.use(GmapVue, {
   load: {
     key: '',
-    libraries: 'places', // This is required if you use the Autocomplete plugin
-    // OR: libraries: 'places,drawing'
-    // OR: libraries: 'places,drawing,visualization'
-    // (as you require)
+    libraries: 'places'
   },
-
-  //// If you intend to programmatically custom event listener code
-  //// (e.g. `this.$refs.gmap.$on('zoom_changed', someFunc)`)
-  //// instead of going through Vue templates (e.g. `<GmapMap @zoom_changed="someFunc">`)
-  //// you might need to turn this on.
-  // autobindAllEvents: false,
-
-  //// If you want to manually install components, e.g.
-  //// import {GmapMarker} from 'gmap-vue/src/components/marker'
-  //// Vue.component('GmapMarker', GmapMarker)
-  //// then set installComponents to 'false'.
-  //// If you want to automatically install all the components this property must be set to 'true':
   installComponents: true
 })
-// Vue.component('gmap-cluster', 'GmapVue/Cluster');
+
 export default {
   name: "Map",
   components: {
@@ -67,8 +49,8 @@ export default {
   },
   data() {
     return {
-      currentDealerId: false,
-      currentDealer: false,
+      currentDealerId: null,
+      currentDealer: null,
       clusterStyles: [{
         "textColor": "#fff",
         "fontFamily": "Nissan",
@@ -106,16 +88,7 @@ export default {
     getCurrentDealer(){
       this.$axios.get('json/Dealer.json', {baseURL: window.location.origin})
           .then((response) => {
-            // const data = response.data;
-            // console.log(response.data)
             this.currentDealer = response.data;
-            // this.dealer = data;
-            // this.suggestedName = data.suggestedName;
-            // this.city = data.address.city;
-            // this.addressLine = data.address.addressLine1;
-            // this.phone = data.contact.phone;
-            // this.website = data.contact.website;
-            // this.openingHoursText = data.openingHours.openingHoursText;
           })
           .catch((err) => {
             console.log(err)

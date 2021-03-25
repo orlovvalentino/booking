@@ -9,13 +9,20 @@
           <car-static-description v-if="!activeTab"/>
         </div>
         <tab-content title="автомобиль" icon="false" scope="props">
-          <cars-grid  @on-next="$refs.tabsWrapper.nextTab()" @on-modification="onModification"/>
+          <cars-grid @on-next="$refs.tabsWrapper.nextTab()" @on-modification="onModification"/>
         </tab-content>
         <tab-content title="дилер" icon="false">
-          <dealer-step :current-modification="currentModification" @on-next="$refs.tabsWrapper.nextTab()"/>
+          <dealer-step v-if="activeTab===1"
+                       :current-modification="currentModification"
+                       @on-next="onNext"/>
         </tab-content>
         <tab-content title="ТО И СЕРВИСНЫЕ работы" icon="false">
-          Yuhuuu! This seems pretty damn simple
+          <inspection-step
+              v-if="activeTab===2"
+              @on-next="$refs.tabsWrapper.nextTab()"
+              :current-modification="currentModification"
+              :current-dealer="currentDealer"
+          />
         </tab-content>
         <tab-content title="отправьте заявку" icon="false">
           cancel
@@ -35,6 +42,7 @@ import CarStaticDescription from "@/components/Steps/Car/CarStaticDescription";
 import CarsGrid from "@/components/Steps/Car/CarsGrid";
 import DealerStep from "@/components/Steps/DealerStep"
 
+
 import {FormWizard, TabContent} from 'vue-form-wizard'
 
 export default {
@@ -42,7 +50,8 @@ export default {
   data() {
     return {
       activeTab: null,
-      currentModification:null
+      currentModification: null,
+      currentDealer: null
     }
   },
   components: {
@@ -52,18 +61,23 @@ export default {
     CarStaticDescription,
     FormWizard,
     TabContent,
-    DealerStep
+    DealerStep,
+    InspectionStep: () => import("@/components/Steps/Inspection"),
   },
   methods: {
     onChangeTabs(prevIndex, newIndex) {
       this.activeTab = newIndex;
     },
-    onModification(value){
+    onModification(value) {
       this.currentModification = value;
+    },
+    onNext(value) {
+      this.currentDealer = value;
+      this.$refs.tabsWrapper.nextTab()
     }
   },
-  computed:{
-    slotProps () {
+  computed: {
+    slotProps() {
       return {
         nextTab: this.nextTab
       }

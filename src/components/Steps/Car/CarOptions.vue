@@ -31,7 +31,7 @@
       </fieldset>
       <fieldset class="car-fieldset" :class="{ 'fieldset--error': $v.warrantySelected.$error }">
         <legend class="car-legend">автомобиль на гарантии?
-          <span class="car-tooltip" v-tooltip="'Введите год и месяц первичной продажи вашего а/м или данные о начале гарантии из Вашей гарантийной книжки'">?</span>
+          <span class="car-tooltip tooltip" v-tooltip="'Введите год и месяц первичной продажи вашего а/м или данные о начале гарантии из Вашей гарантийной книжки'">?</span>
         </legend>
         <v-select v-model="$v.warrantySelected.$model" :options="warrantyOptions" :clearable="false"/>
         <div class="error" v-if="!$v.warrantySelected.required">это поле обязательно для заполнения</div>
@@ -290,13 +290,8 @@ export default {
     align-items: center;
   }
   &-tooltip{
-    border: none;
-    border-radius: 50%;
-    background-color: #EFEFEF;
-    display: block;
     width: 16px;
     height: 16px;
-    text-align: center;
     font-size: 10px;
     line-height: 16px;
   }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <dealer-top :current-modification="currentModification"/>
-    <dealer-middle @on-next="$emit('on-next')"/>
+    <dealer-middle @on-next="onNext" :current-dealer="currentDealer"/>
   </div>
 
 </template>
@@ -18,8 +18,16 @@ export default {
       type: [Boolean, Object]
     }
   },
-  mounted() {
-
+  data() {
+    return {
+      currentDealer: false
+    }
+  },
+  methods:{
+    onNext(value){
+      this.currentDealer = value;
+      this.$emit('on-next',this.currentDealer)
+    }
   }
 }
 </script>

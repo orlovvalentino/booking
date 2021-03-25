@@ -65,12 +65,12 @@ export default {
   },
   data() {
     return {
-      suggestedName: this.currentDealer.suggestedName,
-      addressLine: this.currentDealer ? this.currentDealer.address.addressLine : false,
-      city: this.currentDealer ? this.currentDealer.address.city : false,
-      phone: this.currentDealer ? this.currentDealer.contact.phone : false,
-      website: this.currentDealer ? this.currentDealer.contact.website : false,
-      openingHoursText: this.currentDealer ? this.currentDealer.openingHours.openingHoursText : false
+      suggestedName: this.currentDealer.suggestedName ?? null,
+      addressLine: this.currentDealer.address.addressLine1 ?? null,
+      city: this.currentDealer.address.city ?? null,
+      phone:  this.currentDealer.contact.phone ?? null,
+      website: this.currentDealer.contact.website ?? null,
+      openingHoursText: this.currentDealer.openingHours.openingHoursText ?? null
     }
   }
 }
@@ -194,6 +194,7 @@ export default {
     color: #C3002F;
     font-weight: 300;
     margin-bottom: 18px;
+    text-transform: uppercase;
   }
 
   button {
