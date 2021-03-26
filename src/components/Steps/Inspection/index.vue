@@ -123,11 +123,16 @@ export default {
       margin-left: 0;
       margin-right: 0;
       padding-right: 22px;
-      padding-bottom: 0px;
+      padding-bottom: 0;
     }
 
     .price-value{
       line-height: 34px;
+    }
+  }
+  .price{
+    @media (min-width: 768px) {
+      margin-bottom: 21px;
     }
   }
 

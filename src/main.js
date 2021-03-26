@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import axios from 'axios';
 
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+import "@babel/polyfill";
+
 global.jQuery = require('jquery');
 var $ = global.jQuery;
 window.$ = $;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="cars-grid" ref="carsGrid">
-      <div class="car" v-for="(car, i) in cars" :key="car.model_name" :style="'order:'+ ++i * 10 ">
+      <div class="car" v-for="(car, i) in cars" :key="car.model_name" :style="'order:'+ ++i * 10 " @click="bubblingClick">
         <div class="img-wrap">
           <img class="img" :alt="car.model_name"
                :src="'https://customer360.ru/CarMaintenance/CarPicture/'+car.models[0].id" loading="lazy">
@@ -50,8 +50,11 @@ export default {
       this.$refs.carsGrid.querySelectorAll('.car').forEach((el)=>{
         el.classList.remove('active')
       });
-      event.target.closest('.car').classList.add('active');
+
       this.$emit('on-modification', this.getModelData(id));
+    },
+    bubblingClick(event){
+      event.currentTarget.classList.add('active');
     },
     getModelData(id){
       let model;
