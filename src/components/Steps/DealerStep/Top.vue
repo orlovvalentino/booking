@@ -1,5 +1,5 @@
 <template>
-  <div class="dealer-top">
+  <div class="current-model">
     <div class="img-wrap">
       <img class="img" :alt="model_name"
            :src="'https://customer360.ru/CarMaintenance/CarPicture/'+id" loading="lazy">
@@ -19,6 +19,10 @@ export default {
     currentModification: {
       type: [Boolean, Object],
       default: {}
+    },
+    buttonText:{
+      type: String,
+      default:'qweqwe'
     }
   },
   data() {
@@ -49,12 +53,16 @@ export default {
   width: 193px;
 }
 
-.dealer-top {
+.current-model {
   border-bottom: 1px solid #EFEFEF;
   margin-bottom: 20px;
   @media (min-width: 768px) {
     display: flex;
     padding-bottom: 20px;
+    border: none;
+  }
+  @media (min-width: 1024px) {
+    margin-top: 0;
   }
 }
 
@@ -85,6 +93,7 @@ export default {
     line-height: 20px;
     font-weight: 300;
     text-transform: uppercase;
+    letter-spacing: 0.04em;
     @media (min-width: 768px) {
       font-size: 12px;
       line-height: 16px;

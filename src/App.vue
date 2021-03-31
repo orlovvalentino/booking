@@ -2,7 +2,11 @@
   <div id="app" class="main-content-wrapper">
     <header-nissan></header-nissan>
     <div class="main-content">
-      <form-wizard color="false" @on-change="onChangeTabs" ref="tabsWrapper"
+      <form-wizard v-if="!isScheduled"
+                    color="false"
+                   @on-complete="onComplete"
+                   @on-change="onChangeTabs"
+                   ref="tabsWrapper"
                    next-button-text=""
       >
         <div slot="title" class="car-step">
@@ -25,11 +29,17 @@
           />
         </tab-content>
         <tab-content title="отправьте заявку" icon="false">
-          cancel
+          <send-request v-if="activeTab===3"
+                        @on-next="$refs.tabsWrapper.nextTab()"
+                        :current-modification="currentModification"
+                        :current-dealer="currentDealer"/>
         </tab-content>
-
       </form-wizard>
+
+      <VisitScheduled v-if="isScheduled && !isDone" @on-done="isDone = true"/>
+      <success-block v-if="isDone" />
     </div>
+
     <footer-nissan></footer-nissan>
   </div>
 
@@ -51,7 +61,9 @@ export default {
     return {
       activeTab: null,
       currentModification: null,
-      currentDealer: null
+      currentDealer: null,
+      isScheduled:false,
+      isDone: false,
     }
   },
   components: {
@@ -63,6 +75,9 @@ export default {
     TabContent,
     DealerStep,
     InspectionStep: () => import("@/components/Steps/Inspection"),
+    SendRequest: () => import("@/components/Steps/SendRequest"),
+    VisitScheduled: () => import("@/components/VisitScheduled"),
+    SuccessBlock: () => import("@/components/Success"),
   },
   methods: {
     onChangeTabs(prevIndex, newIndex) {
@@ -74,6 +89,9 @@ export default {
     onNext(value) {
       this.currentDealer = value;
       this.$refs.tabsWrapper.nextTab()
+    },
+    onComplete: function () {
+      this.isDone = true;
     }
   },
   computed: {

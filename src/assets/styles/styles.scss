@@ -59,6 +59,66 @@ a {
   text-decoration: none;
 }
 
+.ni{
+  &-fieldset {
+    position: relative;
+    border: 1px solid #000;
+    height: 44px;
+    padding: 0;
+    margin: 13px 0 20px;
+    .error{
+      font-size: 10px;
+      text-transform: lowercase;
+      padding-left: 10px;
+      color:#C3002F;
+      display: none;
+    }
+    &.fieldset--error{
+      border-color: #C3002F;
+      .error{
+        display: block;
+      }
+    }
+    &.ni-fieldset-textarea{
+      height: 200px;
+    }
+  }
+  &-legend {
+    position: absolute;
+    left: 8px;
+    top: -14px;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 0 8px;
+    background: #fff;
+    line-height: 22px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+  }
+  &-input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0 16px;
+  }
+  &-textarea{
+    width: 100%;
+    border: none;
+    height: 100%;
+    resize:none;
+    padding: 12px 13px;
+  }
+}
+.vdp-datepicker-icon {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #C3002F;
+}
 
 .ni-button {
   text-transform: uppercase;
@@ -255,5 +315,126 @@ a {
     }
   }
 }
+.current-model{
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 9px;
+  @media (min-width: 768px) {
+    margin-top: 39px;
+    margin-left: 0;
+    padding: 0;
+    margin-right: 0;
+    border: none;
+    margin-bottom: 51px;
+  }
+}
+
+.wizard-tab-content .inspection-wrap {
+  padding-top: 11px;
+  @media (min-width: 768px) {
+    border: 1px solid #EFEFEF;
+    margin-bottom: 32px;
+  }
+  .dealer {
+    border: none;
+    padding: 0;
+  }
+
+  .dealer-name {
+    font-size: 20px;
+    line-height: 26px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .dealer-top {
+    margin-bottom: 4px;
+    @media (min-width: 768px) {
+      padding: 19px 0 0 24px;
+    }
+
+    svg {
+      transform: translate(0px, -7px);
+      width: 68px;
+      margin-left: -10px;
+      margin-right: 5px;
+      @media (min-width: 768px) {
+        transform: translate(-2px, 0px);
+        margin-top: -16px;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .dealer-title {
+    font-size: 14px;
+    line-height: 18px;
+    @media (min-width: 768px) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  .address {
+    margin-bottom: 25px;
+  }
+
+  .address-txt {
+    font-size: 14px;
+    line-height: 21px;
+    @media (min-width: 768px) {
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+
+  .hours {
+    margin-bottom: 25px;
+    @media (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .hours-txt {
+    font-size: 14px;
+    line-height: 21px;
+    @media (min-width: 768px) {
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+
+  .description {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 29px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #EFEFEF;
+    @media (min-width: 768px) {
+      padding-left: 22px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 22px;
+      padding-bottom: 0;
+    }
+
+    .price-value {
+      line-height: 34px;
+    }
+
+    .price {
+      @media (min-width: 768px) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
 
 

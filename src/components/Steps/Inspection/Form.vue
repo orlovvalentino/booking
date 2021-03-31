@@ -163,8 +163,14 @@
           <div class="collapse-content" v-collapse-content>
             <div>
               <el-radio-group v-model="radio">
-                <el-radio :label="3">Программа Ниссан Сервис 3+ : продление действующего контракта</el-radio>
-                <el-radio :label="6">Программа Ниссан Сервис 3+ : первичная покупка</el-radio>
+                <el-radio :label="1">
+                  <span class="el-radio-label">Программа Ниссан Сервис 3+ : продление действующего контракта</span>
+                  <span class="el-radio-price">17 600,00 руб.</span>
+                </el-radio>
+                <el-radio :label="2">
+                  <span class="el-radio-label">Программа Ниссан Сервис 3+ : первичная покупка</span>
+                  <span class="el-radio-price">17 600,00 руб.</span>
+                </el-radio>
               </el-radio-group>
             </div>
           </div>
@@ -220,6 +226,7 @@
 import Vue from 'vue';
 
 import VueCollapse from 'vue2-collapse'
+
 Vue.use(VueCollapse);
 
 import ElCheckbox from 'element-ui/packages/checkbox';
@@ -244,15 +251,15 @@ export default {
 
 <style scoped lang="scss">
 .form {
+  border-top: 1px solid #EFEFEF;
   padding: 0;
-  margin-top: 20px;
   @media (min-width: 768px) {
     padding: 0 15px;
-    margin-top: 16px;
+    padding-top: 15px;
   }
   @media (min-width: 1024px) {
     padding: 0 24px;
-    margin-top: 31px;
+    padding-top: 20px;
   }
 }
 
@@ -266,7 +273,7 @@ export default {
     line-height: 19px;
   }
   @media (min-width: 1024px) {
-    margin-bottom: 29px;
+    margin-bottom: 19px;
   }
 }
 
@@ -299,12 +306,17 @@ export default {
   .options-header {
     padding-left: 34px;
     position: relative;
+    flex: 1;
     @media (min-width: 768px) {
       padding-left: 39px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      padding-bottom: 4px;
     }
-
+    @media (min-width: 768px) {
+      padding-bottom: 0;
+    }
   }
 
   .options-item {
@@ -334,7 +346,6 @@ export default {
 
     .txt {
       line-height: 22px;
-      margin-bottom: 4px;
       @media (min-width: 1024px) {
         margin-bottom: 0;
       }
@@ -412,6 +423,20 @@ export default {
   }
 }
 
+
+.v-collapse-content-end {
+  display: block;
+  padding-top: 24px;
+  @media (min-width: 768px) {
+    padding-top: 29px;
+  }
+  @media (min-width: 768px) {
+    padding-top: 12px;
+  }
+}
+
+</style>
+<style lang="scss">
 .v-collapse-content {
   display: none;
 
@@ -502,22 +527,41 @@ export default {
   }
 
   .el-radio-group {
-
+    margin-left: 32px;
+    @media (min-width: 768px) {
+      margin-left: 38px;
+    }
   }
-
+  .el-radio__input{
+    left: 0;
+    top: 1px;
+    position: absolute;
+  }
   .el-radio {
-    margin-bottom: 26px;
-  }
-}
+    margin-bottom: 9px;
+    white-space: normal;
+    padding-left: 32px;
+    @media (min-width: 768px) {
+      padding-left: 40px;
+      margin-bottom: 26px;
+    }
 
-.v-collapse-content-end {
-  display: block;
-  padding-top: 24px;
-  @media (min-width: 768px) {
-    padding-top: 29px;
+    &__label {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
   }
-  @media (min-width: 768px) {
-    padding-top: 12px;
+  .el-radio-price {
+    margin-top: 4px;
+    color: #C3002F;
+    @media (min-width: 768px) {
+      margin-top: 0;
+      margin-left: auto;
+    }
   }
 }
 

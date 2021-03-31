@@ -21,3 +21,8 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+/1.json
+/1.txt
+/2.json
+/123vue.config.js
+/nissan.package.json

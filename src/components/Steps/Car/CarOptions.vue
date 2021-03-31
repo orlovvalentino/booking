@@ -1,13 +1,13 @@
 <template>
   <form class="car-options" :style="'order: '+ setOrder" @submit.prevent="submit">
     <div class="car-options-left">
-      <fieldset class="car-fieldset" :class="{ 'fieldset--error': $v.carModification.$error }">
-        <legend class="car-legend">модификация</legend>
+      <fieldset class="ni-fieldset" :class="{ 'fieldset--error': $v.carModification.$error }">
+        <legend class="ni-legend">модификация</legend>
         <v-select v-model="$v.carModification.$model" label="Name" :options="carModifications" :clearable="false"/>
         <div class="error" v-if="!$v.carModification.required">это поле обязательно для заполнения</div>
       </fieldset>
-      <fieldset class="car-fieldset" :class="{ 'fieldset--error': $v.dateSale.$error }">
-        <legend class="car-legend">Год и месяц первичной продажи</legend>
+      <fieldset class="ni-fieldset" :class="{ 'fieldset--error': $v.dateSale.$error }">
+        <legend class="ni-legend">Год и месяц первичной продажи</legend>
         <datepicker :minimumView="'month'"
                     bootstrapStyling
                     v-model="$v.dateSale.$model"
@@ -29,8 +29,8 @@
                        @change="changeSlider"></b-form-slider>
 
       </fieldset>
-      <fieldset class="car-fieldset" :class="{ 'fieldset--error': $v.warrantySelected.$error }">
-        <legend class="car-legend">автомобиль на гарантии?
+      <fieldset class="ni-fieldset" :class="{ 'fieldset--error': $v.warrantySelected.$error }">
+        <legend class="ni-legend">автомобиль на гарантии?
           <span class="car-tooltip tooltip" v-tooltip="'Введите год и месяц первичной продажи вашего а/м или данные о начале гарантии из Вашей гарантийной книжки'">?</span>
         </legend>
         <v-select v-model="$v.warrantySelected.$model" :options="warrantyOptions" :clearable="false"/>
@@ -133,7 +133,7 @@ export default {
           this.$emit('on-next');
         }, 500)
       }
-      console.log(this.submitStatus);
+      // console.log(this.submitStatus);
     },
     screenCheck() {
       if (this.tablet.matches) {
@@ -232,27 +232,6 @@ export default {
     }
   }
 
-  &-fieldset {
-    position: relative;
-    border: 1px solid #000;
-    height: 44px;
-    padding: 0;
-    margin: 13px 0 20px;
-    .error{
-      font-size: 10px;
-      text-transform: lowercase;
-      padding-left: 10px;
-      color:#C3002F;
-      display: none;
-    }
-    &.fieldset--error{
-      border-color: #C3002F;
-      .error{
-        display: block;
-      }
-    }
-  }
-
   &-slider {
     border: none;
     position: relative;
@@ -276,19 +255,6 @@ export default {
     }
   }
 
-  &-legend {
-    position: absolute;
-    left: 8px;
-    top: -14px;
-    font-size: 10px;
-    text-transform: uppercase;
-    padding: 0 8px;
-    background: #fff;
-    line-height: 22px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-  }
   &-tooltip{
     width: 16px;
     height: 16px;
@@ -297,13 +263,7 @@ export default {
   }
 }
 
-.vdp-datepicker-icon {
-  position: absolute;
-  right: 6px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: #C3002F;
-}
+
 
 .vs {
   &__dropdown-toggle {
