@@ -85,8 +85,11 @@ export default {
     }
     @media (min-width: 1024px) {
       margin: 0;
-      max-width: 270px;
-      flex: 1;
+      flex: 1 0 0;
+    }
+    @media (min-width: 1280px) {
+      width: 270px;
+      flex: none;
     }
   }
 

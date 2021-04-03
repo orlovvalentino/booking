@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="cars-grid" ref="carsGrid">
-      <div class="car" v-for="(car, i) in cars" :key="car.model_name" :style="'order:'+ ++i * 10 " @click="bubblingClick">
+      <div class="car" v-for="(car, i) in cars" :key="car.model_name" :style="'order:'+ ++i * 10 "
+           @click="bubblingClick">
         <div class="img-wrap">
           <img class="img" :alt="car.model_name"
                :src="'https://customer360.ru/CarMaintenance/CarPicture/'+car.models[0].id" loading="lazy">
@@ -9,12 +10,14 @@
         <h3 class="car-name">{{ car.model_name }}</h3>
         <ul class="models">
           <li class="model" v-for="model in car.models">
-            <button class="model-link" type="button" @click="choiceModel(model.id,i,$event)">{{ model.model_code }} {{ model.year_start }}-{{ model.year_end }}</button>
+            <button class="model-link" type="button" @click="choiceModel(model.id,i,$event)">{{ model.model_code }}
+              {{ model.year_start }}-{{ model.year_end }}
+            </button>
           </li>
         </ul>
       </div>
       <car-options @on-next="$emit('on-next')"
-                    v-if="modificationId"
+                   v-if="modificationId"
                    :modificationId="modificationId"
                    :current-car-index="currentCarIndexInGrid"/>
     </div>
@@ -22,16 +25,17 @@
 </template>
 
 <script>
+
 export default {
   name: "CarsGrid",
-  components:{
+  components: {
     CarOptions: () => import("./CarOptions")
   },
   data() {
     return {
       cars: [],
       modificationId: '',
-      currentCarIndexInGrid:null
+      currentCarIndexInGrid: null
     }
   },
   mounted() {
@@ -44,28 +48,28 @@ export default {
         });
   },
   methods: {
-    choiceModel(id,index,event){
-      this.modificationId  = +id;
-      this.currentCarIndexInGrid  = index;
-      this.$refs.carsGrid.querySelectorAll('.car').forEach((el)=>{
+    choiceModel(id, index, event) {
+      this.modificationId = +id;
+      this.currentCarIndexInGrid = index;
+      this.$refs.carsGrid.querySelectorAll('.car').forEach((el) => {
         el.classList.remove('active')
       });
 
       this.$emit('on-modification', this.getModelData(id));
     },
-    bubblingClick(event){
+    bubblingClick(event) {
       event.currentTarget.classList.add('active');
     },
-    getModelData(id){
+    getModelData(id) {
       let model;
-      this.cars.forEach((item)=>{
-        let i = item.models.filter((i)=>{
+      this.cars.forEach((item) => {
+        let i = item.models.filter((i) => {
           return i.id == id;
         })
-        if(i.length) {
+        if (i.length) {
           model = i[0];
           model.model_name = item.model_name;
-        };
+        }
       })
       return model;
     }
@@ -97,7 +101,8 @@ export default {
   padding: 0 15px;
   box-sizing: border-box;
   margin-bottom: 20px;
-  &.active{
+
+  &.active {
     box-shadow: 0 0 0 2px #C3002F;
     border-color: #fff;
     @media (min-width: 768px) {
@@ -105,6 +110,7 @@ export default {
     }
 
   }
+
   @media (min-width: 768px) {
     width: calc(50% - 10px);
   }
@@ -122,15 +128,22 @@ export default {
 
 .img-wrap {
   display: flex;
-  height: 160px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 160px;
+  @media (min-width: 1024px) {
+    flex-direction: column;
+  }
 }
 
 .img {
+  height: 100%;
   width: auto;
-  max-width: 100%;
-  max-height: 100%;
+  @media (min-width: 1024px) {
+    flex: none;
+    height: auto;
+    width: 100%;
+  }
 }
 
 .models {

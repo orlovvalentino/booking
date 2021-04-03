@@ -1,50 +1,26 @@
 <template>
   <div>
-    <div class="gmap-wrapper">
-      <gmap-map
-          class="gmap-container"
-          ref="gmap"
-          :center="center"
-          @tilesloaded="mapLoaded"
-          :zoom="7">
-        <gmap-cluster
-            :clusterClass="'customClasterClass'"
-            :styles="clusterStyles">
-          <gmap-marker v-for="m in dealers"
-                       :key="m.id"
-                       :position="m.geolocation"
-                       :icon="m.marker"
-                       @click="clicked(m)"
-                       :clickable="true">
-            <gmap-info-window :opened="m.infoWindowOpened">
-              <p class="gmap-info-title">{{ m.tradingName }}</p>
-              <p class="gmap-info-price">11 377,93 руб.</p>
-            </gmap-info-window>
-          </gmap-marker>
-        </gmap-cluster>
-      </gmap-map>
-    </div>
-    <current-dealer v-if="currentDealer" @on-next="$emit('on-next', currentDealer)" :current-dealer="currentDealer"/>
+    map
   </div>
 </template>
 
 <script>
 import Vue from 'vue';
-import * as GmapVue from 'gmap-vue';
-import GmapCluster from 'gmap-vue/dist/components/cluster';
+// import * as GmapVue from 'gmap-vue';
+// import GmapCluster from 'gmap-vue/dist/components/cluster';
 
-Vue.use(GmapVue, {
-  load: {
-    key: '',
-    libraries: 'places'
-  },
-  installComponents: true
-})
+// Vue.use(GmapVue, {
+//   load: {
+//     key: '',
+//     libraries: 'places'
+//   },
+//   installComponents: true
+// })
 
 export default {
   name: "Map",
   components: {
-    GmapCluster,
+    // GmapCluster,
     CurrentDealer: () => import("./CurrentDealer")
   },
   data() {

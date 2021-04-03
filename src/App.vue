@@ -91,7 +91,7 @@ export default {
       this.$refs.tabsWrapper.nextTab()
     },
     onComplete: function () {
-      this.isDone = true;
+      this.isScheduled = true;
     }
   },
   computed: {
