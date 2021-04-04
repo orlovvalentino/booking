@@ -117,7 +117,6 @@ export default {
             i.marker = this.marker;
             i.markeractive = this.markerActive;
             i.infoWindowOpened = false;
-            console.log(i);
             return i;
           })
 

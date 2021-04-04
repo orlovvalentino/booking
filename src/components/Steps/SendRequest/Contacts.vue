@@ -345,6 +345,7 @@ export default {
     }
     @media (min-width: 1024px) {
       width: auto;
+      flex: none;
       padding: 0 30px;
       &:nth-child(2n) {
         margin: 0 21px;

@@ -236,9 +236,9 @@ import ElRadioGroup from 'element-ui/packages/radio-group';
 export default {
   name: "InspectionForm",
   components: {
-    ElRadio,
-    ElRadioGroup,
-    ElCheckbox
+    'el-radio':ElRadio,
+    'el-radio-group':ElRadioGroup,
+    'el-checkbox':ElCheckbox
   },
   data() {
     return {
@@ -314,8 +314,9 @@ export default {
       align-items: center;
       padding-bottom: 4px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       padding-bottom: 0;
+      justify-content: left;
     }
   }
 
@@ -379,6 +380,9 @@ export default {
     color: #C3002F;
     line-height: 22px;
     font-weight: 300;
+    @media (min-width: 1024px) {
+      margin-left: auto;
+    }
   }
 }
 
