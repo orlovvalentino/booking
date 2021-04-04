@@ -7,7 +7,9 @@
           :center="center"
           @tilesloaded="mapLoaded"
           :zoom="7">
-
+        <gmap-cluster
+            :clusterClass="'customClasterClass'"
+            :styles="clusterStyles">
           <gmap-marker v-for="m in dealers"
                        :key="m.id"
                        :position="m.geolocation"
@@ -19,7 +21,7 @@
               <p class="gmap-info-price">11 377,93 руб.</p>
             </gmap-info-window>
           </gmap-marker>
-
+        </gmap-cluster>
       </gmap-map>
     </div>
     <current-dealer v-if="currentDealer" @on-next="$emit('on-next', currentDealer)" :current-dealer="currentDealer"/>

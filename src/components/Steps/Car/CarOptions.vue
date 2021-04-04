@@ -54,7 +54,7 @@
 import bFormSlider from 'vue-bootstrap-slider/es/form-slider';
 import Datepicker from 'vuejs-datepicker';
 import ru from './ru.js';
-// import $ from "jquery";
+
 import wnumb from "wnumb";
 import vSelect from 'vue-select';
 import {required} from 'vuelidate/lib/validators'
