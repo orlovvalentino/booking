@@ -7,9 +7,7 @@
           :center="center"
           @tilesloaded="mapLoaded"
           :zoom="7">
-        <gmap-cluster
-            :clusterClass="'customClasterClass'"
-            :styles="clusterStyles">
+
           <gmap-marker v-for="m in dealers"
                        :key="m.id"
                        :position="m.geolocation"
@@ -21,7 +19,7 @@
               <p class="gmap-info-price">11 377,93 руб.</p>
             </gmap-info-window>
           </gmap-marker>
-        </gmap-cluster>
+
       </gmap-map>
     </div>
     <current-dealer v-if="currentDealer" @on-next="$emit('on-next', currentDealer)" :current-dealer="currentDealer"/>
@@ -39,7 +37,7 @@ Vue.use(GmapVue, {
     libraries: 'places'
   },
   installComponents: true
-})
+});
 
 export default {
   name: "Map",
@@ -60,8 +58,8 @@ export default {
         "lineHeight": "60",
         "url": "/cluster.svg"
       }],
-      marker: "marker.svg",
-      markerActive: "marker-active.svg",
+      marker: false,
+      markerActive: false,
       dealers: [],
       center: {
         lat: 55.8286148,
@@ -103,20 +101,30 @@ export default {
     }
   },
   mounted() {
+    if(!!window.MSInputMethodContext && !!document.documentMode){
+      this.marker = require('./img/marker.png');
+      this.markerActive = require('./img/marker-active.png');
+    }else{
+      this.marker = require('./img/marker.svg');
+      this.markerActive = require('./img/marker-active.svg');
+    }
     console.log('map mounted')
     this.$axios.get('json/GetDealers.json', {baseURL: window.location.origin})
         .then((response) => {
           this.dealers = response.data.dealers.map((i) => {
-            i.marker = 'marker.svg';
-            i.markeractive = 'marker-active.svg';
+            i.marker = this.marker;
+            i.markeractive = this.markerActive;
             i.infoWindowOpened = false;
+            console.log(i);
             return i;
           })
+
         })
         .catch((err) => {
           console.log(err)
         });
     // this.fitBounds();
+
   }
 }
 </script>
