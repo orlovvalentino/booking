@@ -118,7 +118,8 @@ export default {
 .options {
   list-style: none;
   @media (min-width: 768px) {
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   li {
@@ -128,19 +129,21 @@ export default {
       margin-bottom: 0;
     }
     @media (min-width: 1024px) {
-      width: auto;
-      max-width: 340px;
-      flex: 1;
+      margin: 0;
+      flex: 1 0 0;
+    }
+    @media (min-width: 1280px) {
+      width: 340px;
+      flex: none;
     }
   }
   .icon-wrap{
     height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
   }
   .icon {
-    margin: 0 auto;
+    margin: auto;
+    display: block;
   }
 
   .txt {
