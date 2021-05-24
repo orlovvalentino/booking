@@ -23,7 +23,7 @@
     <div class="car-options-right">
       <fieldset class="car-slider">
         <legend class="car-slider-legend">пробег <span>{{ mileageValue }}</span></legend>
-        <b-form-slider :step="100" :min="0" :max="1000000"
+        <b-form-slider :step="100" :min="0" :max="2000000"
                        :value="mileageStart"
                        tooltip="hide"
                        ref="mySlider"
@@ -57,10 +57,10 @@ import ru from './ru.js';
 
 import wnumb from "wnumb";
 import vSelect from 'vue-select';
-import {required} from 'vuelidate/lib/validators'
+import {required} from 'vuelidate/lib/validators';
 
 
-import '../../../assets/styles/bootstrap-slider/bootstrap-slider.scss'
+import '../../../assets/styles/bootstrap-slider/bootstrap-slider.scss';
 import "../../../assets/styles/vue-select/vue-select.scss";
 import "../../../assets/styles/vdp-datepicked.scss";
 
@@ -102,7 +102,7 @@ export default {
       language: ru,
       dateSale: '',
       submitStatus: null
-    }
+    };
   },
   validations: {
     carModification: {
@@ -118,25 +118,25 @@ export default {
   mounted() {
     this.screenCheck();
     this.getCarModifications();
-    this.desktop.addListener( this.screenCheck);
-    this.tablet.addListener( this.screenCheck);
+    this.desktop.addListener(this.screenCheck);
+    this.tablet.addListener(this.screenCheck);
     this.mileageValue = this.formatMileage.to(this.mileageStart);
+
   },
   methods: {
     submit() {
-      console.log('submit!')
-      this.$v.$touch()
+      console.log('submit!');
+      this.$v.$touch();
       if (this.$v.$invalid) {
         this.submitStatus = 'ERROR';
       } else {
         // do your submit logic here
-        this.submitStatus = 'PENDING'
+        this.submitStatus = 'PENDING';
         setTimeout(() => {
-          this.submitStatus = 'OK'
+          this.submitStatus = 'OK';
           this.$emit('on-next');
-        }, 500)
+        }, 500);
       }
-      // console.log(this.submitStatus);
     },
     screenCheck() {
       if (this.tablet.matches) {
@@ -156,9 +156,12 @@ export default {
       this.$axios.get('json/GetCarModifications.json', {baseURL: window.location.origin})
           .then((response) => {
             this.carModifications = response.data[this.modificationId];
+            if (this.carModifications.length === 1) {
+              this.carModification = this.carModifications[0];
+            }
           })
           .catch((err) => {
-            console.log(err)
+            console.log(err);
           });
     }
   },
@@ -185,16 +188,17 @@ export default {
   },
   watch: {
     modificationId() {
-      this.warrantySelected = false;
+      this.warrantySelected = '';
       this.carModification = '';
       this.dateSale = '';
       this.mileageValue = this.formatMileage.to(this.mileageStart);
       this.mileage = 0;
       this.$refs.mySlider.slider.setValue(this.mileageStart);
+      this.$v.$reset();
       this.getCarModifications();
     }
   }
-}
+};
 </script>
 
 <style scoped lang="scss">

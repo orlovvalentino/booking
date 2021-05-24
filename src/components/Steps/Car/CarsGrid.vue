@@ -58,7 +58,9 @@ export default {
       this.$emit('on-modification', this.getModelData(id));
     },
     bubblingClick(event) {
-      event.currentTarget.classList.add('active');
+      if(event.target.classList.contains('model-link')){
+        event.currentTarget.classList.add('active');
+      }
     },
     getModelData(id) {
       let model;
@@ -159,5 +161,9 @@ export default {
   background: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 </style>
