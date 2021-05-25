@@ -21,18 +21,18 @@
           </filter>
         </defs>
       </svg>
-      <p class="dealer-name">{{ suggestedName }}</p>
+      <p class="dealer-name">{{ currentDealer.suggestedName }}</p>
     </div>
     <div class="description">
       <div class="address">
         <p class="address-label dealer-title">Адрес</p>
-        <p class="address-txt">{{ city }}, {{ addressLine }}</p>
-        <p class="address-txt"><a :href="'tel:'+phone">Телефон: {{ phone }}</a></p>
-        <p class="address-txt"><a class="web" :href="website" target="_blank">Веб-сайт</a></p>
+        <p class="address-txt">{{ currentDealer.address.city }}, {{ currentDealer.address.addressLine1 }}</p>
+        <p class="address-txt"><a :href="'tel:'+ currentDealer.contact.phone">Телефон: {{ currentDealer.contact.phone }}</a></p>
+        <p class="address-txt"><a class="web" :href="currentDealer.contact.website" target="_blank">Веб-сайт</a></p>
       </div>
       <div class="hours">
         <p class="hours-title dealer-title">Время работы</p>
-        <p class="hours-txt">{{ openingHoursText }}</p>
+        <p class="hours-txt">{{ currentDealer.openingHours.openingHoursText }}</p>
       </div>
       <div class="price">
         <p class="price-title dealer-title">Стоимость ТО</p>
@@ -69,12 +69,6 @@ export default {
   },
   data() {
     return {
-      suggestedName: this.currentDealer.suggestedName ?? null,
-      addressLine: this.currentDealer.address.addressLine1 ?? null,
-      city: this.currentDealer.address.city ?? null,
-      phone: this.currentDealer.contact.phone ?? null,
-      website: this.currentDealer.contact.website ?? null,
-      openingHoursText: this.currentDealer.openingHours.openingHoursText ?? null
     }
   }
 }

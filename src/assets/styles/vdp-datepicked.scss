@@ -14,6 +14,15 @@
   background-color: #C3002F !important;
   color:white;
 }
+.vue__time-picker .dropdown ul li:not([disabled]).active,
+.vue__time-picker .dropdown ul li:not([disabled]).active:hover,
+.vue__time-picker .dropdown ul li:not([disabled]).active:focus,
+.vue__time-picker-dropdown ul li:not([disabled]).active,
+.vue__time-picker-dropdown ul li:not([disabled]).active:hover,
+.vue__time-picker-dropdown ul li:not([disabled]).active:focus {
+  background: #C3002F !important;
+  color: #fff;
+}
 .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,
 .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,
 .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {

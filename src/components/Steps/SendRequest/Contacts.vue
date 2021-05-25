@@ -238,7 +238,9 @@ export default {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 34px;
-
+  .vdp-datepicker__calendar{
+    width: 300px !important;
+  }
   .ni-fieldset {
     flex: 1;
     @media (max-width: 767px) {

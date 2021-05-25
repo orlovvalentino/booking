@@ -75,6 +75,10 @@ export default {
       // this.fitBounds();
     },
     clicked(value) {
+      for (let dealer of this.dealers) {
+        dealer.infoWindowOpened = false;
+        dealer.marker = this.marker;
+      }
       if (value.infoWindowOpened) {
         value.infoWindowOpened = false;
         value.marker = this.marker;
@@ -82,13 +86,13 @@ export default {
         value.infoWindowOpened = true;
         value.marker = this.markerActive;
       }
-      this.getCurrentDealer()
+      this.getCurrentDealer(value['dealerId'])
       this.currentDealerId = value['dealerId'];
     },
-    getCurrentDealer(){
+    getCurrentDealer(currentDealerId){
       this.$axios.get('json/Dealer.json', {baseURL: window.location.origin})
           .then((response) => {
-            this.currentDealer = response.data;
+            this.currentDealer = response.data.find(x => x.dealerId === currentDealerId);
           })
           .catch((err) => {
             console.log(err)
