@@ -318,6 +318,11 @@ export default {
 
 .confirm-note {
   margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    .ni-fieldset{
+      height: auto;
+    }
+  }
   @media (min-width: 1024px) {
     margin-top: 9px;
   }
@@ -371,6 +376,9 @@ export default {
   &-left {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 767px) {
+      display: block;
+    }
   }
 
   &-right {
