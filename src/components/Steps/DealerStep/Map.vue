@@ -6,9 +6,12 @@
           ref="gmap"
           :center="center"
           @tilesloaded="mapLoaded"
+          :options="mapoptions"
           :zoom="7">
         <gmap-cluster
+            @click="clickCluster($event)"
             :clusterClass="'customClasterClass'"
+            :zoomOnClick="true"
             :styles="clusterStyles">
           <gmap-marker v-for="m in dealers"
                        :key="m.id"
@@ -35,7 +38,7 @@ import GmapCluster from 'gmap-vue/dist/components/cluster';
 
 Vue.use(GmapVue, {
   load: {
-    key: '',
+    key: 'AIzaSyCrQu5eJhDHE9lq0lf1NMohUhqZU3ygYBY',
     libraries: 'places'
   },
   installComponents: true
@@ -66,6 +69,15 @@ export default {
       center: {
         lat: 55.8286148,
         lng: 37.4048445
+      },
+      mapoptions:{
+        draggable: 1,
+        scrollwheel: 1,
+        gestureHandling:'greedy',
+        maxZoom: 21,
+        zoomControl: true,
+        rotateControl: true,
+        fullscreenControl: true
       }
     }
   },
@@ -73,6 +85,9 @@ export default {
     mapLoaded() {
       console.log('map loaded');
       // this.fitBounds();
+    },
+    clickCluster(a){
+      this.$refs.gmap.panTo(a.center_);
     },
     clicked(value) {
       for (let dealer of this.dealers) {
@@ -88,6 +103,7 @@ export default {
       }
       this.getCurrentDealer(value['dealerId'])
       this.currentDealerId = value['dealerId'];
+      this.$refs.gmap.panTo(value.geolocation);
     },
     getCurrentDealer(currentDealerId){
       this.$axios.get('json/Dealer.json', {baseURL: window.location.origin})
