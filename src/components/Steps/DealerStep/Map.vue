@@ -38,8 +38,10 @@ import GmapCluster from 'gmap-vue/dist/components/cluster';
 
 Vue.use(GmapVue, {
   load: {
-    key: 'AIzaSyCrQu5eJhDHE9lq0lf1NMohUhqZU3ygYBY',
-    libraries: 'places'
+    key: 'AIzaSyCMpCK4TXwM2uFAAPpASXSaQguz6mKPtTs',
+    libraries: 'places',
+    language: 'ru',
+    region:'RU'
   },
   installComponents: true
 });
@@ -71,13 +73,9 @@ export default {
         lng: 37.4048445
       },
       mapoptions:{
-        draggable: 1,
-        scrollwheel: 1,
         gestureHandling:'greedy',
         maxZoom: 21,
-        zoomControl: true,
-        rotateControl: true,
-        fullscreenControl: true
+        styles: [{featureType: "poi", stylers: [{visibility: "off"}]}],
       }
     }
   },
@@ -119,7 +117,7 @@ export default {
       for (let dealer of this.dealers) {
         bounds.extend(dealer.geolocation)
       }
-      this.$refs.gmap.fitBounds(bounds);
+      // this.$refs.gmap.fitBounds(bounds);
     }
   },
   mounted() {
