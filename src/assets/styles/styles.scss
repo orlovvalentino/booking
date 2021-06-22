@@ -99,7 +99,9 @@ a {
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-
+    .car-tooltip{
+      display: inline-block;
+    }
   }
   &-input{
     height: 100%;

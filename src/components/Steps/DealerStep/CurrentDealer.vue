@@ -85,6 +85,7 @@ export default {
   &-top {
     display: flex;
     margin-bottom: 8px;
+    align-items: flex-start;
     @media (min-width: 768px) {
       margin-bottom: 0;
     }
